@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeViewCell" id="eGD-4a-ZPd" customClass="HomeViewCell" customModule="IOSNamingConvention" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="238" height="224"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="T16-fY-1qD">
+                <rect key="frame" x="0.0" y="0.0" width="238" height="224"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rml-zc-TOF">
+                        <rect key="frame" x="0.0" y="0.0" width="238" height="224"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_homework" translatesAutoresizingMaskIntoConstraints="NO" id="RoU-vl-vVK">
+                                <rect key="frame" x="94" y="25" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4yI-V2-XQw"/>
+                                    <constraint firstAttribute="width" secondItem="RoU-vl-vVK" secondAttribute="height" multiplier="1:1" id="5M5-D1-V4T"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Gallery" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vll-K9-gTC">
+                                <rect key="frame" x="83.5" y="85" width="71" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61388897899999995" green="0.22017443179999999" blue="0.28480613230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vll-K9-gTC" firstAttribute="centerX" secondItem="RoU-vl-vVK" secondAttribute="centerX" id="0Jr-4h-TIk"/>
+                            <constraint firstItem="vll-K9-gTC" firstAttribute="top" secondItem="RoU-vl-vVK" secondAttribute="bottom" constant="10" id="0wa-Qm-tuq"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vll-K9-gTC" secondAttribute="bottom" constant="10" id="DlP-H0-Kao"/>
+                            <constraint firstItem="RoU-vl-vVK" firstAttribute="top" secondItem="Rml-zc-TOF" secondAttribute="top" constant="25" id="O5L-IU-O9a"/>
+                            <constraint firstItem="RoU-vl-vVK" firstAttribute="centerX" secondItem="Rml-zc-TOF" secondAttribute="centerX" id="xja-v5-kQn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Rml-zc-TOF" firstAttribute="leading" secondItem="T16-fY-1qD" secondAttribute="leading" id="8FA-J2-uCc"/>
+                    <constraint firstItem="Rml-zc-TOF" firstAttribute="top" secondItem="T16-fY-1qD" secondAttribute="top" id="Gfl-rF-E3y"/>
+                    <constraint firstAttribute="trailing" secondItem="Rml-zc-TOF" secondAttribute="trailing" id="YQI-N9-mEe"/>
+                    <constraint firstAttribute="bottom" secondItem="Rml-zc-TOF" secondAttribute="bottom" id="oha-y5-6sl"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="238" height="224"/>
+            <connections>
+                <outlet property="imgIcon" destination="RoU-vl-vVK" id="oty-od-86y"/>
+                <outlet property="labelTitle" destination="vll-K9-gTC" id="XtC-dg-q60"/>
+                <outlet property="viewMain" destination="Rml-zc-TOF" id="JqN-D5-SDT"/>
+            </connections>
+            <point key="canvasLocation" x="75.362318840579718" y="-36.830357142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_homework" width="159" height="159"/>
+    </resources>
+</document>
